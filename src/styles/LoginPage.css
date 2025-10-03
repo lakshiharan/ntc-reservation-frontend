@@ -1,0 +1,139 @@
+/* Colors and Typography */
+:root {
+    --primary-bg: hsl(213, 85%, 97%);
+    --secondary-bg: hsl(233, 36%, 38%);
+    --input-bg: #fff;
+    --shadow-color: hsl(231, 62%, 94%);
+    --text-color: hsl(0, 0%, 30%);
+    --button-color: #fff;
+    --button-hover: hsl(233, 36%, 45%);
+    --error-color: #f44336;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  /* General Reset */
+  body {
+    font-family: var(--font-family);
+    background: hsl(218, 50%, 91%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+  }
+  
+  /* Login Screen Styles */
+  .login-container {
+    background: var(--primary-bg);
+    padding: 3em 2em;
+    border-radius: 30px;
+    box-shadow: 0 0 2em var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .login-container h2 {
+    margin-top: -1em;
+    font-size: 1.8em;
+    color: var(--secondary-bg);
+    text-align: center;
+  }
+  
+  .input-group {
+    width: 100%;
+    background: var(--input-bg);
+    box-shadow: 0 0 2em var(--shadow-color);
+    padding: 1em;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+  }
+  
+  .input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.9em;
+    color: var(--text-color);
+  }
+  
+  .input-group input::placeholder {
+    color: var(--text-color);
+    font-size: 0.9em;
+  }
+  
+  .input-group ion-icon {
+    color: var(--text-color);
+    font-size: 1.2em;
+  }
+  
+  /* Show/Hide Password Button */
+  .input-group .show-hide {
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: auto;
+  }
+  
+  /* Login Button */
+  .login-button {
+    width: 100%;
+    padding: 1em;
+    background: var(--secondary-bg);
+    color: var(--button-color);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background: var(--button-hover);
+  }
+  
+  /* Footer Links */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: var(--text-color);
+    width: 100%;
+  }
+  
+  .footer span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer span:hover {
+    color: var(--secondary-bg);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      padding: 2em 1.5em;
+    }
+  
+    .login-container h2 {
+      font-size: 1.5em;
+    }
+  
+    .login-button {
+      font-size: 0.9em;
+    }
+  
+    .footer {
+      font-size: 0.7em;
+    }
+  }
+  

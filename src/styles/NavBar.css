@@ -1,0 +1,56 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #23395d; /* Change to your preferred color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays above other elements */
+  }
+  
+  .navbar .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #ffd700; /* Highlight color on hover */
+  }
+  
+  .navbar .nav-links .logout-button {
+    background-color: #ff5722; /* Logout button color */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .nav-links .logout-button:hover {
+    background-color: #e64a19;
+  }
+  
+  .main-content {
+    margin-top: 70px; /* Add margin to avoid content overlapping with navbar */
+  }
+  
